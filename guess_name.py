@@ -1,3 +1,8 @@
+# Zadatak:
+#   Dodati brojac pokusaja te prilagoditi ispis nakon sto korisnik pogodi,
+#   tako da napise iz koliko pokusaja je pogodio naziv programskog jezika
+
+
 # import - ovoe cemo uskoro raditi, ali za sada zanemriti
 import random
 
