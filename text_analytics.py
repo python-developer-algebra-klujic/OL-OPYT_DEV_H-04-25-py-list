@@ -15,13 +15,27 @@ Duis eu purus ultrices, convallis massa in, pulvinar metus.
 Etiam placerat, elit sit amet porta auctor, magna felis accumsan ipsum, 
 eget scelerisque augue dolor ultrices nisl. Curabitur id sollicitudin sem.
 '''
-occurrences = text.count('semper')
+# occurrences = text.count('semper')
 
-print(f'Rijec Lorem se pojavljuje {occurrences} puta u tekstu.')
+# print(f'Rijec Lorem se pojavljuje {occurrences} puta u tekstu.')
 
 # statistika ponavljanja rijeci
 words = text.split()
+cleaned_text = []
 
+# u ovim for petljama za svaku rijec prvojeriti koliko se puta pojavljuje u teksu ili listi i ispisati to u konzolu
 for word in words:
-    # u ovoj for petlji za svaku rijec prvojeriti koliko se puta pojavljuje u teksu ili listi i ispisati to u konzolu
-    pass
+    # 1. korak pripremiti podatke za analizu
+    word = word.lower()
+    word = word.strip()
+    word = word.replace('.', '')
+    word = word.replace(',', '')
+
+    cleaned_text.append(word)
+
+
+for word in cleaned_text:
+    # 2. korak obraditi podatke
+    word_occurrences = cleaned_text.count(word)
+
+    print(f'Rijec {word} se ponavlja {word_occurrences} puta.')
