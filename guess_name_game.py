@@ -41,7 +41,7 @@ while True:
     print('\t1. Programski jezici')
     print('\t2. Filmovi')
     print('\t3. Bandovi')
-    users_select_theme = input('Seletirajte jednu od tema tako da upisete broj ispred teme: ')
+    users_select_theme = input('Selektirajte jednu od tema tako da upisete broj ispred teme: ')
 
     if users_select_theme == '1':
         selected_theme = languages
@@ -58,11 +58,11 @@ while True:
 
     # nova whle petlja koja obraduje jednu partiju
     while True:
-        users_guess = input('Pogodite naziv programskog jezika: ')
+        users_guess = input('Pogodite naziv trazenog pojma: ')
         counter += 1
 
         if users_guess.lower() == selected_theme[selected_theme_index].lower():
-            print(f'Cestitamo!!! Pogodili ste trazeni naziv iz {counter}. puta!!!')            
+            print(f'Cestitamo!!! Pogodili ste naziv trazenog pojma iz {counter}. puta!!!')            
             break
         else:
             print('Na zalost niste pogodili! Pokusajte ponovno.')
@@ -81,4 +81,3 @@ while True:
 print()
 print('Pozdrav i do slijedeceg puta!!!')
 print()
-
