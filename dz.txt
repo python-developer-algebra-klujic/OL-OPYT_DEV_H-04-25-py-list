@@ -11,3 +11,6 @@ Primjer:
 D
 D dur (0, 4, 7) ili se pise samo D -> D, F#, A
 D mol (0, 3, 7) ili se pise samo d -> D, F, A
+
+H -> H, D#, F#
+h -> H, D, F#
